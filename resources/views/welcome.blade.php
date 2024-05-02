@@ -9,7 +9,7 @@
                     </p>
 
                     <p>
-                        <a href="#" class="btn btn-primary btn-lg" role="button">Ask now</a>
+                        <a href="{{ route('questions.create') }}" class="btn btn-primary btn-lg" role="button">Ask now</a>
                     </p>
                 </div>
 
