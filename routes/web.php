@@ -14,3 +14,4 @@ Route::get('/contact',[PageController::class,'contact'])->name('contact');
 Route::post('/contact',[PageController::class,'submitContact'])->name('contact');
 
 Route::resource('questions', QuestionController::class);
+Route::resource('answers', QuestionController::class,['except' => 'create', 'index', 'show']);
