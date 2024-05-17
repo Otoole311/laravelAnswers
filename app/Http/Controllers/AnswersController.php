@@ -19,7 +19,7 @@ class AnswersController extends Controller
         //
         //validate the form data
         $validated = $request->validate([
-            'content' => 'required|max:15',
+            'content' => 'required|min:15',
             'question_id' => 'required|integer',
       ]);
 

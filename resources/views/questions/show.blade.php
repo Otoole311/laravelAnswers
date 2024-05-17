@@ -10,8 +10,10 @@
 
     <hr/>
 
+    @if($question->answers()->count() > 0)
+
     <!-- display answers  for this question-->
-    @foreach($question->answers as $answer)
+        @foreach($question->answers as $answer)
         <div class="panel panel-default">
             <div class="panel-body">
                 <p>
@@ -21,6 +23,16 @@
             </div>
         </div>
     @endforeach
+
+    @else
+    <p>
+        There are no answers for this question, please consider submitting one.
+    </p>
+
+
+    @endif
+
+
 
     <hr/>
 
